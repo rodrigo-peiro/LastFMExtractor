@@ -741,11 +741,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Development\\LastFMExtractor\\LastFMExtractor.Domain\\LastFMExtractor.Domain.csproj",
+      "projectUniqueName": "D:\\Development\\Projects\\LastFMExtractor\\LastFMExtractor.Domain\\LastFMExtractor.Domain.csproj",
       "projectName": "LastFMExtractor.Domain",
-      "projectPath": "D:\\Development\\LastFMExtractor\\LastFMExtractor.Domain\\LastFMExtractor.Domain.csproj",
+      "projectPath": "D:\\Development\\Projects\\LastFMExtractor\\LastFMExtractor.Domain\\LastFMExtractor.Domain.csproj",
       "packagesPath": "C:\\Users\\rpp720\\.nuget\\packages\\",
-      "outputPath": "D:\\Development\\LastFMExtractor\\LastFMExtractor.Domain\\obj\\",
+      "outputPath": "D:\\Development\\Projects\\LastFMExtractor\\LastFMExtractor.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

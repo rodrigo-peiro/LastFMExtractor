@@ -12,3 +12,17 @@ D:\Development\LastFMExtractor\LastFMExtractor.Persistence\obj\Debug\netcoreapp2
 D:\Development\LastFMExtractor\LastFMExtractor.Persistence\obj\Debug\netcoreapp2.2\LastFMExtractor.Persistence.csproj.CopyComplete
 D:\Development\LastFMExtractor\LastFMExtractor.Persistence\obj\Debug\netcoreapp2.2\LastFMExtractor.Persistence.dll
 D:\Development\LastFMExtractor\LastFMExtractor.Persistence\obj\Debug\netcoreapp2.2\LastFMExtractor.Persistence.pdb
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Persistence\bin\Debug\netcoreapp2.2\LastFMExtractor.Persistence.deps.json
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Persistence\bin\Debug\netcoreapp2.2\LastFMExtractor.Persistence.runtimeconfig.json
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Persistence\bin\Debug\netcoreapp2.2\LastFMExtractor.Persistence.runtimeconfig.dev.json
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Persistence\bin\Debug\netcoreapp2.2\LastFMExtractor.Persistence.dll
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Persistence\bin\Debug\netcoreapp2.2\LastFMExtractor.Persistence.pdb
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Persistence\bin\Debug\netcoreapp2.2\LastFMExtractor.Domain.dll
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Persistence\bin\Debug\netcoreapp2.2\LastFMExtractor.Domain.pdb
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Persistence\obj\Debug\netcoreapp2.2\LastFMExtractor.Persistence.csprojAssemblyReference.cache
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Persistence\obj\Debug\netcoreapp2.2\LastFMExtractor.Persistence.csproj.CoreCompileInputs.cache
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Persistence\obj\Debug\netcoreapp2.2\LastFMExtractor.Persistence.AssemblyInfoInputs.cache
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Persistence\obj\Debug\netcoreapp2.2\LastFMExtractor.Persistence.AssemblyInfo.cs
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Persistence\obj\Debug\netcoreapp2.2\LastFMExtractor.Persistence.csproj.CopyComplete
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Persistence\obj\Debug\netcoreapp2.2\LastFMExtractor.Persistence.dll
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Persistence\obj\Debug\netcoreapp2.2\LastFMExtractor.Persistence.pdb

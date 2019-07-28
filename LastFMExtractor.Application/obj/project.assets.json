@@ -3919,11 +3919,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Development\\LastFMExtractor\\LastFMExtractor.Application\\LastFMExtractor.Application.csproj",
+      "projectUniqueName": "D:\\Development\\Projects\\LastFMExtractor\\LastFMExtractor.Application\\LastFMExtractor.Application.csproj",
       "projectName": "LastFMExtractor.Application",
-      "projectPath": "D:\\Development\\LastFMExtractor\\LastFMExtractor.Application\\LastFMExtractor.Application.csproj",
+      "projectPath": "D:\\Development\\Projects\\LastFMExtractor\\LastFMExtractor.Application\\LastFMExtractor.Application.csproj",
       "packagesPath": "C:\\Users\\rpp720\\.nuget\\packages\\",
-      "outputPath": "D:\\Development\\LastFMExtractor\\LastFMExtractor.Application\\obj\\",
+      "outputPath": "D:\\Development\\Projects\\LastFMExtractor\\LastFMExtractor.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3942,8 +3942,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\Development\\LastFMExtractor\\LastFMExtractor.Persistence\\LastFMExtractor.Persistence.csproj": {
-              "projectPath": "D:\\Development\\LastFMExtractor\\LastFMExtractor.Persistence\\LastFMExtractor.Persistence.csproj"
+            "D:\\Development\\Projects\\LastFMExtractor\\LastFMExtractor.Persistence\\LastFMExtractor.Persistence.csproj": {
+              "projectPath": "D:\\Development\\Projects\\LastFMExtractor\\LastFMExtractor.Persistence\\LastFMExtractor.Persistence.csproj"
             }
           }
         }

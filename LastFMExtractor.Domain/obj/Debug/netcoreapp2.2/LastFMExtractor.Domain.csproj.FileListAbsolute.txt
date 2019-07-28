@@ -7,3 +7,12 @@ D:\Development\LastFMExtractor\LastFMExtractor.Domain\obj\Debug\netcoreapp2.2\La
 D:\Development\LastFMExtractor\LastFMExtractor.Domain\obj\Debug\netcoreapp2.2\LastFMExtractor.Domain.dll
 D:\Development\LastFMExtractor\LastFMExtractor.Domain\obj\Debug\netcoreapp2.2\LastFMExtractor.Domain.pdb
 D:\Development\LastFMExtractor\LastFMExtractor.Domain\obj\Debug\netcoreapp2.2\LastFMExtractor.Domain.csprojAssemblyReference.cache
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Domain\bin\Debug\netcoreapp2.2\LastFMExtractor.Domain.deps.json
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Domain\bin\Debug\netcoreapp2.2\LastFMExtractor.Domain.dll
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Domain\bin\Debug\netcoreapp2.2\LastFMExtractor.Domain.pdb
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Domain\obj\Debug\netcoreapp2.2\LastFMExtractor.Domain.csprojAssemblyReference.cache
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Domain\obj\Debug\netcoreapp2.2\LastFMExtractor.Domain.csproj.CoreCompileInputs.cache
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Domain\obj\Debug\netcoreapp2.2\LastFMExtractor.Domain.AssemblyInfoInputs.cache
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Domain\obj\Debug\netcoreapp2.2\LastFMExtractor.Domain.AssemblyInfo.cs
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Domain\obj\Debug\netcoreapp2.2\LastFMExtractor.Domain.dll
+D:\Development\Projects\LastFMExtractor\LastFMExtractor.Domain\obj\Debug\netcoreapp2.2\LastFMExtractor.Domain.pdb
