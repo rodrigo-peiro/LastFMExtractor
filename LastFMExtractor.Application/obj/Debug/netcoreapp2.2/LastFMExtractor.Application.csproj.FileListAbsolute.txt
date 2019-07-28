@@ -1,0 +1,16 @@
+D:\Development\LastFMExtractor\LastFMExtractor.Application\bin\Debug\netcoreapp2.2\LastFMExtractor.Application.deps.json
+D:\Development\LastFMExtractor\LastFMExtractor.Application\bin\Debug\netcoreapp2.2\LastFMExtractor.Application.dll
+D:\Development\LastFMExtractor\LastFMExtractor.Application\bin\Debug\netcoreapp2.2\LastFMExtractor.Application.pdb
+D:\Development\LastFMExtractor\LastFMExtractor.Application\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\Development\LastFMExtractor\LastFMExtractor.Application\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Hosting.Abstractions.xml
+D:\Development\LastFMExtractor\LastFMExtractor.Application\obj\Debug\netcoreapp2.2\LastFMExtractor.Application.csproj.CoreCompileInputs.cache
+D:\Development\LastFMExtractor\LastFMExtractor.Application\obj\Debug\netcoreapp2.2\LastFMExtractor.Application.AssemblyInfoInputs.cache
+D:\Development\LastFMExtractor\LastFMExtractor.Application\obj\Debug\netcoreapp2.2\LastFMExtractor.Application.AssemblyInfo.cs
+D:\Development\LastFMExtractor\LastFMExtractor.Application\obj\Debug\netcoreapp2.2\LastFMExtractor.Application.csproj.CopyComplete
+D:\Development\LastFMExtractor\LastFMExtractor.Application\obj\Debug\netcoreapp2.2\LastFMExtractor.Application.dll
+D:\Development\LastFMExtractor\LastFMExtractor.Application\obj\Debug\netcoreapp2.2\LastFMExtractor.Application.pdb
+D:\Development\LastFMExtractor\LastFMExtractor.Application\obj\Debug\netcoreapp2.2\LastFMExtractor.Application.csprojAssemblyReference.cache
+D:\Development\LastFMExtractor\LastFMExtractor.Application\bin\Debug\netcoreapp2.2\LastFMExtractor.Domain.dll
+D:\Development\LastFMExtractor\LastFMExtractor.Application\bin\Debug\netcoreapp2.2\LastFMExtractor.Persistence.dll
+D:\Development\LastFMExtractor\LastFMExtractor.Application\bin\Debug\netcoreapp2.2\LastFMExtractor.Persistence.pdb
+D:\Development\LastFMExtractor\LastFMExtractor.Application\bin\Debug\netcoreapp2.2\LastFMExtractor.Domain.pdb

@@ -1,0 +1,11 @@
+D:\Development\LastFMExtractor\LastFMExtractor.Persistence\bin\Debug\netcoreapp2.1\LastFMExtractor.Persistence.deps.json
+D:\Development\LastFMExtractor\LastFMExtractor.Persistence\bin\Debug\netcoreapp2.1\LastFMExtractor.Persistence.dll
+D:\Development\LastFMExtractor\LastFMExtractor.Persistence\bin\Debug\netcoreapp2.1\LastFMExtractor.Persistence.pdb
+D:\Development\LastFMExtractor\LastFMExtractor.Persistence\obj\Debug\netcoreapp2.1\LastFMExtractor.Persistence.csprojAssemblyReference.cache
+D:\Development\LastFMExtractor\LastFMExtractor.Persistence\obj\Debug\netcoreapp2.1\LastFMExtractor.Persistence.csproj.CoreCompileInputs.cache
+D:\Development\LastFMExtractor\LastFMExtractor.Persistence\obj\Debug\netcoreapp2.1\LastFMExtractor.Persistence.AssemblyInfoInputs.cache
+D:\Development\LastFMExtractor\LastFMExtractor.Persistence\obj\Debug\netcoreapp2.1\LastFMExtractor.Persistence.AssemblyInfo.cs
+D:\Development\LastFMExtractor\LastFMExtractor.Persistence\obj\Debug\netcoreapp2.1\LastFMExtractor.Persistence.dll
+D:\Development\LastFMExtractor\LastFMExtractor.Persistence\obj\Debug\netcoreapp2.1\LastFMExtractor.Persistence.pdb
+D:\Development\LastFMExtractor\LastFMExtractor.Persistence\bin\Debug\netcoreapp2.1\LastFMExtractor.Persistence.runtimeconfig.json
+D:\Development\LastFMExtractor\LastFMExtractor.Persistence\bin\Debug\netcoreapp2.1\LastFMExtractor.Persistence.runtimeconfig.dev.json
