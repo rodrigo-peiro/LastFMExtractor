@@ -30,64 +30,7 @@ namespace LastFMExtractor.Persistence
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("ProductVersion", "2.2.1-servicing-10028");
-
-            //modelBuilder.Entity<ExportedTracks>(entity =>
-            //{
-            //    entity.ToTable("exported_tracks");
-
-            //    entity.Property(e => e.Album).IsUnicode(false);
-
-            //    entity.Property(e => e.AlbumId)
-            //        .HasMaxLength(50)
-            //        .IsUnicode(false);
-
-            //    entity.Property(e => e.Artist).IsUnicode(false);
-
-            //    entity.Property(e => e.ArtistId)
-            //        .HasMaxLength(50)
-            //        .IsUnicode(false);
-
-            //    entity.Property(e => e.DateCreated).HasColumnType("smalldatetime");
-            //    entity.Property(e => e.DateExtracted).HasColumnType("smalldatetime").HasDefaultValueSql("getdate()");
-
-            //    entity.Property(e => e.Track).IsUnicode(false);
-
-            //    entity.Property(e => e.TrackId)
-            //        .HasMaxLength(50)
-            //        .IsUnicode(false);
-
-            //    entity.Property(e => e.JobId).HasColumnType("uniqueidentifier");
-
-            //    entity.Metadata.FindNavigation(nameof(Domain.Entities.ExportedTracks.Job)).SetPropertyAccessMode(PropertyAccessMode.Field);                
-            //});
-
-            //modelBuilder.Entity<Job>().HasKey(e => new { e.JobId });
-            //modelBuilder.Entity<Job>(entity =>
-            //{
-            //    entity.ToTable("Jobs");
-            //    entity.Property(e => e.JobId).HasColumnType("uniqueidentifier");
-            //    entity.Property(e => e.StartDateTime).HasColumnType("smalldatetime");
-            //    entity.Property(e => e.EndDateTime).HasColumnType("smalldatetime");
-            //    entity.Property(e => e.RecordsProcessed).HasColumnType("int");
-            //    entity.Property(e => e.RecordsFound).HasColumnType("int");
-            //    entity.Property(e => e.Succeeded).HasColumnType("bit");
-
-            //    entity.Metadata.FindNavigation(nameof(Job.ExportedTracks)).SetPropertyAccessMode(PropertyAccessMode.Field);
-            //    entity.HasMany(e => e.ExportedTracks).WithOne().HasForeignKey(e => e.JobId);
-            //});
-
-            //modelBuilder.Entity<JobFailure>().HasKey(e => new { e.FailureId });
-            //modelBuilder.Entity<JobFailure>(entity =>
-            //{
-            //    entity.ToTable("JobFailures");
-            //    entity.Property(e => e.FailureId).HasColumnType("bigint");
-            //    entity.Property(e => e.JobId).HasColumnType("uniqueidentifier");
-            //    entity.Property(e => e.ExceptionDetails).HasColumnType("varchar(max)");
-
-            //    entity.Metadata.FindNavigation(nameof(Job)).SetPropertyAccessMode(PropertyAccessMode.Field);
-            //    entity.HasOne(e => e.Job).WithOne(f => f.JobFailure).HasConstraintName("FK_JobFailure");
-            //});
-
+            
             modelBuilder.Entity<ExportedTracks>(entity =>
             {
                 entity.ToTable("exported_tracks");
