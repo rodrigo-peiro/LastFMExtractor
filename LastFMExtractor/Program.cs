@@ -9,11 +9,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Polly;
-using Polly.Registry;
 using System;
 using System.IO;
-using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace LastFMExtractor
@@ -33,31 +30,11 @@ namespace LastFMExtractor
                 .ConfigureServices((hostContext, services) =>
                 {
                     services.Configure<LastFmSettings>(_config.GetSection("LastFmSettings"));
-
-                    IPolicyRegistry<string> registry = services.AddPolicyRegistry();
-
-                    IAsyncPolicy<HttpResponseMessage> httWaitAndpRetryPolicy =
-                        Policy.HandleResult<HttpResponseMessage>(r => !r.IsSuccessStatusCode)
-                            .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(retryAttempt));
-
-                    registry.Add("SimpleWaitAndRetryPolicy", httWaitAndpRetryPolicy);
-
-                    IAsyncPolicy<HttpResponseMessage> noOpPolicy = Policy.NoOpAsync()
-                        .AsAsyncPolicy<HttpResponseMessage>();
-
-                    registry.Add("NoOpPolicy", noOpPolicy);
-
+                    
                     services.AddHttpClient("LastFmClient", client =>
                     {
                         client.BaseAddress = new Uri(_config.GetValue<string>("LastFmSettings:BaseUrl"));
                         client.DefaultRequestHeaders.Add("Accept", "application/json");
-                    }).AddPolicyHandlerFromRegistry((policyRegistry, httpRequestMessage) =>
-                    {
-                        if (httpRequestMessage.Method == HttpMethod.Get || httpRequestMessage.Method == HttpMethod.Delete)
-                        {
-                            return policyRegistry.Get<IAsyncPolicy<HttpResponseMessage>>("SimpleWaitAndRetryPolicy");
-                        }
-                        return policyRegistry.Get<IAsyncPolicy<HttpResponseMessage>>("NoOpPolicy");
                     });                   
 
                     services.AddAutoMapper();

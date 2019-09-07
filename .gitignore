@@ -40,3 +40,4 @@ LastFMExtractor/obj/Debug/netcoreapp2.2/LastFMExtractor.csproj.FileListAbsolute.
 LastFMExtractor/obj/Debug/netcoreapp2.2/LastFMExtractor.csprojAssemblyReference.cache
 LastFMExtractor/obj/Debug/netcoreapp2.2/LastFMExtractor.dll
 LastFMExtractor/obj/Debug/netcoreapp2.2/LastFMExtractor.pdb
+*.cache
