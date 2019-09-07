@@ -1,46 +1,25 @@
-﻿using System.Web;
+﻿using LastFMExtractor.Domain.Settings;
+using Microsoft.Extensions.Options;
+using System.Web;
 
 namespace LastFMExtractor.Application.UrlBuilderService
 {
     public class UrlBuilderService : IUrlBuilderService
     {
-        private const string method = "user.getrecenttracks";
-        private const string user = "ElRoxo";
-        private const string apiKey = "e38cc7822bd7476fe4083e36ee69748e";
-        private const string format = "json";
+        private readonly LastFmSettings settings;
 
-        public string BuildUrlNoRecordsInDb()
+        public UrlBuilderService(IOptions<LastFmSettings> options)
         {
-            return BuildUrl();
+            settings = options.Value;
         }
-
-        //public string BuildUrlAddLatestRecordTimestamp(string latestRecordTimestamp, string page = "1")
-        //{
-        //    var url = BuildUrl();
-        //    var queryStringKeyValuePairs = HttpUtility.ParseQueryString(url);
-        //    queryStringKeyValuePairs.Add("from", latestRecordTimestamp);
-        //    queryStringKeyValuePairs.Add("page", page);
-
-        //    return queryStringKeyValuePairs.ToString();
-        //}
-
-        //public string BuildUrlAddPage(string latestRecordTimestamp, string page)
-        //{
-        //    var url = BuildUrl();
-        //    var queryStringKeyValuePairs = System.Web.HttpUtility.ParseQueryString(url);
-        //    queryStringKeyValuePairs.Add("from", latestRecordTimestamp);
-        //    queryStringKeyValuePairs.Add("page", page);
-
-        //    return queryStringKeyValuePairs.ToString();
-        //}
 
         public string BuildUrl(string latestRecordTimestamp = "", string page = "1")
         {
             var queryStringKeyValuePairs = HttpUtility.ParseQueryString(string.Empty);
-            queryStringKeyValuePairs.Add("method", method);
-            queryStringKeyValuePairs.Add("user", user);
-            queryStringKeyValuePairs.Add("api_key", apiKey);            
-            queryStringKeyValuePairs.Add("format", format);
+            queryStringKeyValuePairs.Add("method", settings.Method);
+            queryStringKeyValuePairs.Add("user", settings.User);
+            queryStringKeyValuePairs.Add("api_key", settings.ApiKey);            
+            queryStringKeyValuePairs.Add("format", settings.Format);
             queryStringKeyValuePairs.Add("page", page);
 
             if (!string.IsNullOrEmpty(latestRecordTimestamp))
