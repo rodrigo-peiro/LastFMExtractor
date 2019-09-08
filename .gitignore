@@ -41,3 +41,5 @@ LastFMExtractor/obj/Debug/netcoreapp2.2/LastFMExtractor.csprojAssemblyReference.
 LastFMExtractor/obj/Debug/netcoreapp2.2/LastFMExtractor.dll
 LastFMExtractor/obj/Debug/netcoreapp2.2/LastFMExtractor.pdb
 *.cache
+LastFMExtractor.Application/bin/ 
+LastFMExtractor.Application/obj/

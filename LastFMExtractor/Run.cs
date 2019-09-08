@@ -10,7 +10,6 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -18,7 +17,6 @@ namespace LastFMExtractor
 {
     public class Run : IHostedService
     {
-        private readonly IHttpClientFactory _httpClientFactory;
         private readonly IDatabaseService _databaseService;
         private readonly IUrlBuilderService _urlBuilderService;
         private readonly IExtractorService _extractorService;
@@ -26,10 +24,9 @@ namespace LastFMExtractor
         private readonly IMapper _mapper;
         private readonly Stopwatch _stopWatch = new Stopwatch();
 
-        public Run(IHttpClientFactory httpClientFactory, IDatabaseService databaseService, IUrlBuilderService urlBuilderService, 
-                    IExtractorService extractorService, ITransformService transformService, IMapper mapper)
+        public Run(IDatabaseService databaseService, IUrlBuilderService urlBuilderService, IExtractorService extractorService, 
+                    ITransformService transformService, IMapper mapper)
         {
-            _httpClientFactory = httpClientFactory;
             _databaseService = databaseService;
             _urlBuilderService = urlBuilderService;
             _extractorService = extractorService;
@@ -39,7 +36,6 @@ namespace LastFMExtractor
 
         public async Task ExtractTransformLoad()
         {            
-            var httpClient = _httpClientFactory.CreateClient("LastFmClient");
             var recordCount = await _databaseService.GetRecordCount();
             var isTableEmpty = recordCount == 0 ? true : false;
             var mostRecentTimestamp = string.Empty;
@@ -63,7 +59,7 @@ namespace LastFMExtractor
                 url = _urlBuilderService.BuildUrl(mostRecentTimestamp);
             }
 
-            jsonResponse = await _extractorService.Extract(httpClient, url);
+            jsonResponse = await _extractorService.Extract(url);
 
             if (string.IsNullOrEmpty(jsonResponse))
             {
@@ -117,7 +113,7 @@ namespace LastFMExtractor
                         url = _urlBuilderService.BuildUrl(mostRecentTimestamp, currentPage.ToString());
                     }
 
-                    jsonResponse = await _extractorService.Extract(httpClient, url);
+                    jsonResponse = await _extractorService.Extract(url);
                     lastFmData = _transformService.TransformJsonToObject(jsonResponse);
                     listForDb = new List<ExportedTracks>();
                     listForDb.AddRange(_mapper.Map<List<Track>, List<ExportedTracks>>(lastFmData.RecentTracks.Track));

@@ -1,10 +1,9 @@
-﻿using System.Net.Http;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace LastFMExtractor.Application.ExtractorService
 {
     public interface IExtractorService
     {
-        Task<string> Extract(HttpClient httpClient, string requestUri);
+        Task<string> Extract(string requestUri);
     }
 }

@@ -1,13 +1,22 @@
-﻿using System.Net.Http;
+﻿using System;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace LastFMExtractor.Application.ExtractorService
 {
     public class ExtractorService : IExtractorService
     {
-        public async Task<string> Extract(HttpClient httpClient, string requestUri)
-        {   
-            var response = await httpClient.GetAsync(requestUri);
+        private readonly IHttpClientFactory _clientFactory;
+
+        public ExtractorService(IHttpClientFactory clientFactory)
+        {
+            _clientFactory = clientFactory ?? throw new ArgumentNullException(nameof(clientFactory));
+        }
+
+        public async Task<string> Extract(string requestUri)
+        {
+            var client = _clientFactory.CreateClient("LastFmClient");
+            var response = await client.GetAsync(requestUri);
             var json = await response.Content.ReadAsStringAsync();
             
             return json;
